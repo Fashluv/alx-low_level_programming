@@ -1,23 +1,20 @@
 #include <stdio.h>
 #include <stdlib.h>
-
 /**
- * main - return alphabets both lower and upper
- *
+ * main - print alphabets in lower and upper
  * Return: Always 0 (Success)
  */
-
 int main(void)
 {
-	int ch = "a";
-	int CH = "A";
+	int ch = 'a';
+	int CH = 'A';
 
-	while (ch <= "z")
+	While (ch <= 'z')
 	{
 		putchar(ch);
 		ch++;
 	}
-	while (CH <= "Z")
+	while (CH <= 'Z')
 	{
 		putchar(CH);
 		CH++;
