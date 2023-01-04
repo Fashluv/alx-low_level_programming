@@ -8,8 +8,7 @@
 
 int _evaluate(int i, int n)
 {
-	/*Evaluate function*/
-	if (n == 0 || n == 1)
+	if (n == 0 || n == 1) /*Evaluate function*/
 		return (n);
 
 	else
@@ -17,8 +16,10 @@ int _evaluate(int i, int n)
 			return (_evaluate(i + 1, n));
 
 	else
-		if (i * 1 == n) /*Condiction base*/
+		if (i * i == n) /*Condition base*/
 			return (i);
+
 	return (-1);
+
 	return (-1);
 }
