@@ -1,7 +1,3 @@
-/*
- * File: 2-strlen_recursion.c
- * Auth: smone
- */
 
 #include "main.h"
 
@@ -13,11 +9,10 @@
  */
 int _strlen_recursion(char *s)
 {
-	int len = 0;
+	/*base condition*/
+	if (*s == '\0')
+		return (0);
 
-	if (*s)
-	{
-		len++;
-		len += _strlen_recursion(s + 1);
-	}
+	else
+		return (1 + _strlen_recursion(s + 1)); /*sum 1*/
 }
